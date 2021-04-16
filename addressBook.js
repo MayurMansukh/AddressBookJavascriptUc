@@ -93,5 +93,9 @@ if (addressBook.find(name => name.firstname == 'Mayur')) {
 }
 console.log("after delete lenth: " + addressBook.length);
 
+ //Uc6 count contacts in addressBook
+
+ console.log(addressBook.length + " contact are in addressBook :")
+
 
 
