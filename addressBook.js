@@ -79,31 +79,31 @@ try {
 
     addressBook.push(contact1);
     addressBook.push(contact2);
-//Uc4 edit contact by name
-if (addressBook.find(name => name.firstname == 'Mayur')) {
-    addressBook.find(name => name.setfirstname = 'Robert');
-} else { console.log("This Name Contact not in addressBook"); }
+    //Uc4 edit contact by name
+    if (addressBook.find(name => name.firstname == 'Mayur')) {
+        addressBook.find(name => name.setfirstname = 'Robert');
+    } else { console.log("This Name Contact not in addressBook"); }
 
-//Uc5 delete contact by name
-console.log("Before delete lenth: " + addressBook.length);
+    //Uc5 delete contact by name
+    console.log("Before delete lenth: " + addressBook.length);
 
-if (addressBook.find(name => name.firstname == 'Mayur')) {
-    addressBook.splice(1, 1);
+    if (addressBook.find(name => name.firstname == 'Mayur')) {
+        addressBook.splice(1, 1);
 
-}
-console.log("after delete lenth: " + addressBook.length);
+    }
+    console.log("after delete lenth: " + addressBook.length);
 
- //Uc6 count contacts in addressBook
+    //Uc6 count contacts in addressBook
 
- console.log(addressBook.length + " contact are in addressBook :")
+    console.log(addressBook.length + " contact are in addressBook :")
 
- //Uc7 not allow dublicate contact in addressBook
-let arr = addressBook.map(eval => eval.getfirstname === contact2.getfirstname);
-console.log(arr);
+    //Uc7 not allow dublicate contact in addressBook
+    let arr = addressBook.map(eval => eval.getfirstname === contact2.getfirstname);
+    console.log(arr);
 
-if (arr.includes(true)) {
-    console.log("dublicate contact not allowed ");
-} else { addressBook.push(contact3); }
+    if (arr.includes(true)) {
+        console.log("dublicate contact not allowed ");
+    } else { addressBook.push(contact3); }
 
 }
 // Uc8 search contact by City or State
@@ -131,4 +131,7 @@ let state = addressBook.map(eval => eval.state === 'Maharashtra');
 let searchContactByState = state.reduce((a, b) => a + b);
 console.log("contact by state are: " + searchContactByState);
 
+//Uc11 or 12 sort Array
+console.log("After Sorting")
+console.log(addressBook.sort());
 
