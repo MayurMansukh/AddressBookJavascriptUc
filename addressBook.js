@@ -71,4 +71,14 @@ try {
     console.error(e);
 }
 
+//Uc3 add new addressBook with Contact
+let addressBook = [];
+try {
+    let contact1 = new AddressBook("Mayur", "Masnukh", "Ghtkoper", "Mumbai", "Maharashtra", 890990, 9000909090, "mansukh@gmail.com");
+    let contact2 = new AddressBook("Rahul", "Royal", "Ghtkoper", "Navimumbai", "Maharashtra", 889090, 9899909090, "rahul@gmail.com");
+
+    addressBook.push(contact1);
+    addressBook.push(contact2);
+
+
 
