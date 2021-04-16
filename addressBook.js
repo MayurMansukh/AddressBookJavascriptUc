@@ -84,5 +84,14 @@ if (addressBook.find(name => name.firstname == 'Mayur')) {
     addressBook.find(name => name.setfirstname = 'Robert');
 } else { console.log("This Name Contact not in addressBook"); }
 
+//Uc5 delete contact by name
+console.log("Before delete lenth: " + addressBook.length);
+
+if (addressBook.find(name => name.firstname == 'Mayur')) {
+    addressBook.splice(1, 1);
+
+}
+console.log("after delete lenth: " + addressBook.length);
+
 
 
