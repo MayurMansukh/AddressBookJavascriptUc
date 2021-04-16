@@ -97,5 +97,13 @@ console.log("after delete lenth: " + addressBook.length);
 
  console.log(addressBook.length + " contact are in addressBook :")
 
+ //Uc7 not allow dublicate contact in addressBook
+let arr = addressBook.map(eval => eval.getfirstname === contact2.getfirstname);
+console.log(arr);
+
+if (arr.includes(true)) {
+    console.log("dublicate contact not allowed ");
+} else { addressBook.push(contact3); }
+
 
 
