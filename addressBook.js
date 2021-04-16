@@ -79,6 +79,10 @@ try {
 
     addressBook.push(contact1);
     addressBook.push(contact2);
+//Uc4 edit contact by name
+if (addressBook.find(name => name.firstname == 'Mayur')) {
+    addressBook.find(name => name.setfirstname = 'Robert');
+} else { console.log("This Name Contact not in addressBook"); }
 
 
 
