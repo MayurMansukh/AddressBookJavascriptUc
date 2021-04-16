@@ -116,4 +116,9 @@ let state = addressBook.map(eval => eval.state === 'Maharashtra');
 let searchContactByState = state.reduce((a, b) => a + b);
 console.log("contact by state are: " + searchContactByState);
 
+//Uc9 view contacts by state or city
+console.log("view contact by city: \n" + addressBook.filter(element => element.city == 'Mumbai'));
+console.log()
+console.log("view contact by state: \n" + addressBook.filter(element => element.state == 'Maharashtra'));
+
 
