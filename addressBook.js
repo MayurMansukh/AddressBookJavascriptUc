@@ -105,5 +105,15 @@ if (arr.includes(true)) {
     console.log("dublicate contact not allowed ");
 } else { addressBook.push(contact3); }
 
+}
+// Uc8 search contact by City or State
+
+let city = addressBook.map(eval => eval.city === 'Mumbai');
+let searchContactByCity = city.reduce((a, b) => a + b);
+console.log("contact by city are: " + searchContactByCity);
+
+let state = addressBook.map(eval => eval.state === 'Maharashtra');
+let searchContactByState = state.reduce((a, b) => a + b);
+console.log("contact by state are: " + searchContactByState);
 
 
